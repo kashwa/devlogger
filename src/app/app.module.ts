@@ -1,3 +1,4 @@
+import { LogService } from './services/log.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,7 +19,7 @@ import { LogsComponent } from './components/logs/logs.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
